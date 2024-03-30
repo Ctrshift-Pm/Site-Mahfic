@@ -1,0 +1,48 @@
+body,h1,h2,h3,h4,h5,h6 {
+    font-family: "Raleway", sans-serif
+}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("img/home3.png");
+  min-height: 100%;
+  background-attachment: fixed;
+}
+
+.w3-margin-top {
+    margin-top: 80px !important;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+
+.w3-animate-bottom{
+  animation-duration: 3s;
+}
+
+.w3-animate-left{
+  animation-duration: 3s;
+}
+
+.w3-animate-zoom{
+  animation-duration: 3s;
+}
+
+.h2-ref{
+  font-weight: bold;
+}
