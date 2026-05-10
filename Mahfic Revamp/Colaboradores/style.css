@@ -1,0 +1,43 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Raleway", sans-serif
+}
+
+body,
+html {
+    height: 100%;
+    line-height: 1.8;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    background-image: url("img/colab.png");
+    min-height: 100%;
+    background-attachment: fixed;
+}
+
+.w3-margin-top {
+    margin-top: 80px !important;
+}
+
+.w3-bar .w3-button {
+    padding: 16px;
+}
+
+.h2-ref {
+    font-weight: bold;
+}

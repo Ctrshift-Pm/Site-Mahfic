@@ -12,7 +12,8 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href=style.css type="text/css">
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <link rel="stylesheet" href="style.css" type="text/css">
   <link rel="icon" type="image/x-icon" href="img/favicon.png">
 </head>
 
@@ -20,14 +21,14 @@
 
   <!-- Navbar -->
   <div class="w3-top">
-    <div class="w3-bar w3-black w3-card" id="myNavbar">
-      <a href="#home" class="w3-bar-item w3-button w3-wide">MAHFIC</a>
+    <div class="w3-bar w3-black w3-card" id="BarraNav">
+      <a onclick="scrollToY(0, 600, 'easeInOutQuint');" class="w3-bar-item w3-button w3-wide"><img src="img/favicon.png" width="19px" height="19px" style="position:relative;top:-1px"> MAHFIC</a>
       <!-- Links da direita da Navbar -->
       <div class="w3-right w3-hide-small">
         <a href="#sobre" class="w3-bar-item w3-button">SOBRE</a>
-        <a href="#equipe" class="w3-bar-item w3-button"><i class="fa fa-id-card"></i> EQUIPE</a>
-        <a href="#cursos" class="w3-bar-item w3-button"><i class="fa fa-th"></i> CURSOS</a>
-        <a href="#login" class="w3-bar-item w3-button"><i class="fa fa-user-circle-o"></i> LOGIN</a>
+        <a href="/Colaboradores/colab.index.html" class="w3-bar-item w3-button"><i class="fa fa-id-card"></i> CURRÍCULOS</a>
+        <a href="/login/login.php" class="w3-bar-item w3-button"><i class="fa fa-th"></i> CURSOS</a>
+        <a href="login.html" class="w3-bar-item w3-button"><i class="fa fa-user-circle-o"></i> LOGIN</a>
         <a href="#contatos" class="w3-bar-item w3-button"><i class="fa fa-phone"></i> CONTATOS</a>
       </div>
 
@@ -44,9 +45,9 @@
     style="display:none" id="BarraLateral">
     <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16"> Fechar</a>
     <a href="#sobre" onclick="w3_close()" class="w3-bar-item w3-button">SOBRE</a>
-    <a href="#equipe" onclick="w3_close()" class="w3-bar-item w3-button">EQUIPE</a>
+    <a href="/Colaboradores/colab.index.html" onclick="w3_close()" class="w3-bar-item w3-button">CURRÍCULOS</a>
     <a href="#cursos" onclick="w3_close()" class="w3-bar-item w3-button">CURSOS</a>
-    <a href="#login" onclick="w3_close()" class="w3-bar-item w3-button">LOGIN</a>
+    <a href="login.html" onclick="w3_close()" class="w3-bar-item w3-button">LOGIN</a>
     <a href="#contatos" onclick="w3_close()" class="w3-bar-item w3-button">CONTATOS</a>
   </nav>
 
@@ -63,17 +64,16 @@
     </div>
   </header>
 
-  <!-- 
-  Seção sobre: Sofrerá uma revisão - Colocar placeholders até resultado ser combinado. 
--->
+<!-- Seção sobre -->
   <div class="w3-container" style="padding:128px 16px" id="sobre">
-    <h3 class="w3-center w3-animate-left w3-xxlarge" style="font-weight: bold;">SOBRE A EMPRESA</h3>
-      <h4 class="w3-center w3-animate-left w3-large" style="font-weight: bold;"> Há 25 anos ministrando cursos e treinamentos na
+    <h3 class="w3-center scroll-img2 w3-xxlarge" style="font-weight: bold;">SOBRE A EMPRESA</h3>
+      <h4 class="w3-center scroll-img2 w3-large" style="font-weight: bold;"> Há 25 anos ministrando cursos e treinamentos na
         área de veículos leves, <br> pesados e normas de segurança do
         trabalho com ênfase em máquinas pesadas.
       </h4>
-      <div class="w3-row-padding w3-center w3-animate-bottom  " style="margin-top:64px  ">
-        <div class="w3-quarter ">
+      <br>
+      <div class="w3-row-padding w3-center scroll-img" style="margin-top:64px  ">
+        <div class="w3-quarter">
           <span class="glyphicon w3-jumbo">&#xe013;</span>
           <p class="w3-large">Qualidade</p>
           <p>Qualidade não é um acaso, é uma escolha consciente. Por isso, buscamos a excelência em tudo o que fazemos.
@@ -102,10 +102,10 @@
   <!-- div da equipe....-->
   <div class="w3-container w3-light-grey w3-center" style="padding:128px 16px" id="equipe">
     <div class="w3-container">
-      <h2>Referências Profissionais</h2>
+      <h2 class="w3-xxlarge scroll-img2">Referências Profissionais</h2>
       <br>
-      <ul class="w3-ul w3-card-4">
-        <li class="w3-quarter">
+      <ul class="w3-ul w3-card-4 scroll-img">
+        <li class="w3-quarter" >
 
           <img src="img/homem_1.png" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
           <div class="w3-bar-item">
@@ -152,6 +152,11 @@
           </li>
         </li>
       </ul>
+      <br>
+      
+      <!-- Placeholder colaboradores, vai ser mudado no futuro. -->
+      <h3 class="w3-center scroll-img">Venha conhecer mais de nossa equipe.<br>Dê uma olhada nos nossos colaboradores abaixo:</h3><br>
+      <a href="/Colaboradores/colab.index.html" class="w3-button w3-black scroll-img">Colaboradores</a>
     </div>
 
 
@@ -163,29 +168,29 @@
 
   <!-- Seção de Cursos -->
   <div class="w3-container" style="padding:128px 16px" id="cursos">
-    <h3 class="w3-center w3-animate-left " style="font-weight: bold; ">CURSOS</h3>
-    <p class="w3-center w3-large w3-animate-left">O que nós fazemos pelas pessoas.</p>
+    <h3 class="w3-center scroll-img2 w3-xxlarge" style="font-weight: bold; ">CURSOS</h3>
+    <h3 class="w3-center scroll-img2">O que nós fazemos pelas pessoas.</h2>
 
-    <div class="w3-row-padding w3-animate-bottom" style="margin-top:94px ">
+    <div class="w3-row-padding scroll-img" style="margin-top:94px ">
       <div class="w3-col l3 m6 ">
-        <img src="img/seg-job2.jpg" style=" width:93%; padding-top: 10; " onclick="onClick(this)"
+        <img src="img/seg-job2.jpg" style=" width:93%; padding-top: 0px; margin-left: 30px;" onclick="onClick(this)"
           class="w3-hover-opacity w3-round" alt="Segurança de Trabalho">
-        <p>Segurança do Trabalho</p>
+        <p style="margin-left: 30px; font-weight: bold; font-size: 20px;">Segurança do Trabalho</p>
       </div>
       <div class="w3-col l3 m6 w3-image ">
         <img src="img/ope-maq.jpeg" style="width:100%; " onclick="onClick(this)" class="w3-hover-opacity w3-round"
-          alt="Direção Defensiva">
-        <p> Máquinas e Equipamentos</p>
+          alt="Máquinas e Equipamentos">
+        <p style="font-weight: bold; font-size: 20px;"> Máquinas e Equipamentos</p>
       </div>
       <div class=" w3-col l3 m6">
         <img src="img/adm.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity w3-round"
           alt="Administração">
-        <p>Administração</p>
+        <p style="font-weight: bold; font-size: 20px;">Administração</p>
       </div>
       <div class="w3-col l3 m5">
         <img src="img/seg-transe.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity w3-round "
-          alt="Gestão">
-        <p>Trânsito e Segurânça viária</p>
+          alt="Trânsito e Segurânça Viária">
+        <p style="font-weight: bold; font-size: 20px;">Trânsito e Segurânça Viária</p>
       </div>
     </div>
   </div>
@@ -201,21 +206,18 @@
     </div>
   </div>
 
-
-
   <!-- 
   TODO: Seção de login aqui mais tarde
 -->
 
-
   <!-- Contatos -->
-  <div class="w3-container w3-light-grey" style="padding:128px 16px" id="contatos">
-    <h3 class="w3-center">CONTATOS</h3>
-    <p class="w3-center w3-large">Vamos se conhecer melhor, Mande-nos uma mensagem:</p>
+  <div class="w3-container w3-light-grey" style="padding:128px 16px; background-attachment: fixed;" id="contatos">
+    <h3 class="w3-center w3-xxlarge scroll-img2" style="font-weight: bold;">CONTATOS</h3>
+    <h3 class="w3-center scroll-img2">Vamos se conhecer melhor, Mande-nos uma mensagem:</h3>
     <div style="margin-top:48px">
-      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> GO - Quirinópolis-75860-000</p>
-      <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i>(64) 99307-0723</p>
-      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: instagram.com/mafhictreinamentos</p>
+      <p  style="font-weight: bold;font-family: sans-serif;"><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"style="font-weight: bold;"></i> GO - Quirinópolis-75860-000</p>
+      <p style="font-weight: bold; font-family: sans-serif;"><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right" style="font-weight: bold;"></i>(64) 99307-0723</p>
+      <p style="font-weight: bold;font-family: sans-serif;"><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right" style="font-weight: bold;"> </i> Email: mafhictreinamentos@outlook.com</p>
       <br>
       <form action="/action_page.php" target="_blank">
         <p><input class="w3-input w3-border" type="text" placeholder="Nome" required name="Nome"></p>
@@ -232,11 +234,11 @@
   </div>
 
   <!-- Pé da página (Footer) -->
-  <footer class="w3-center w3-black w3-padding-64">
+  <footer class="w3-center w3-black  w3-padding-64" style="height: 430px; margin-left: 200px;">
     <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Voltar ao topo</a>
     <div class="w3-xlarge w3-section ">
       <a class="fa fa-facebook-official w3-hover-opacity w3-margin-right w3-margin"
-        href=" https://www.facebook.com/mafhictreinamentos/" style="color:white"></a>
+        href=" https://www.facebook.com/mafhictreinamentos/" style="color:white;"></a>
       <a class="fa fa-instagram w3-hover-opacity w3-margin-right w3-margin"
         href="https://www.instagram.com/mafhictreinamentos/" style="color:white"></a>
       <a class="fa fa-whatsapp w3-hover-opacity w3-margin-right w3-margin" href="tel:+5564993070723" style="color:white"></a>
@@ -249,6 +251,7 @@
       <i>Todos os direitos reservados. Os valores de serviços anunciados neste site ou via<br>
         e-mail promocional podem ser alterados sem prévio aviso. A Mafhic não é responsável por erros<br>
         descritivos. As Imagens contidas nesta página são meramente ilustrativas.</i>
+        <p style="margin-top:80px; font-style: italic;"><br>Desenvolvido por <span style="font-weight: bold;">TecGen Software Systems</span></p>
     </div>
   </footer>
 

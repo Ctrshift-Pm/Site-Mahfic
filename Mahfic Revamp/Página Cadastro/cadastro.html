@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="./src/fontawesome-free-6.4.2-web/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="pt-br">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="copyright" content="© 2023 Lucas Regly Marchitto" />
+    <meta name="robots" content="all">
+    <title>Painel</title>
+    <link type="text/css" rel="stylesheet"
+        href="https://cdn02.jotfor.ms/themes/CSS/5e6b428acc8c4e222d1beb91.css?v=3.3.52935&themeRevisionID=65660e4b326633110492e01a" />
+    <link type="text/css" rel="stylesheet"
+        href="https://cdn03.jotfor.ms/css/styles/payment/payment_styles.css?3.3.52935" />
+        <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <link type="text/css" rel="stylesheet"
+        href="https://cdn01.jotfor.ms/css/styles/payment/payment_feature.css?3.3.52935" />
+    <script src="https://cdn02.jotfor.ms/static/prototype.forms.js?v=3.3.52935" type="text/javascript"></script>
+    <script src="https://cdn03.jotfor.ms/static/jotform.forms.js?v=3.3.52935" type="text/javascript"></script>
+    <script src="https://cdn01.jotfor.ms/js/vendor/maskedinput_5.0.9.min.js?v=3.3.52935"
+        type="text/javascript"></script>
+
+    <script src="https://cdn02.jotfor.ms/js/vendor/smoothscroll.min.js?v=3.3.52935" type="text/javascript"></script>
+    <script src="https://cdn03.jotfor.ms/js/errorNavigation.js?v=3.3.52935" type="text/javascript"></script>
+    <script type="text/javascript">	JotForm.newDefaultTheme = true;
+        JotForm.extendsNewTheme = false;
+        JotForm.singleProduct = false;
+        JotForm.newPaymentUIForNewCreatedForms = false;
+        JotForm.texts = { "confirmEmail": "E-mail does not match", "pleaseWait": "Please wait...", "validateEmail": "You need to validate this e-mail", "confirmClearForm": "Are you sure you want to clear the form", "lessThan": "Your score should be less than or equal to", "incompleteFields": "There are incomplete required fields. Please complete them.", "required": "This field is required.", "requireOne": "At least one field required.", "requireEveryRow": "Every row is required.", "requireEveryCell": "Every cell is required.", "email": "Enter a valid e-mail address", "alphabetic": "This field can only contain letters", "numeric": "This field can only contain numeric values", "alphanumeric": "This field can only contain letters and numbers.", "cyrillic": "This field can only contain cyrillic characters", "url": "This field can only contain a valid URL", "currency": "This field can only contain currency values.", "fillMask": "Field value must fill mask.", "uploadExtensions": "You can only upload following files:", "noUploadExtensions": "File has no extension file type (e.g. .txt, .png, .jpeg)", "uploadFilesize": "File size cannot be bigger than:", "uploadFilesizemin": "File size cannot be smaller than:", "gradingScoreError": "Score total should only be less than or equal to", "inputCarretErrorA": "Input should not be less than the minimum value:", "inputCarretErrorB": "Input should not be greater than the maximum value:", "maxDigitsError": "The maximum digits allowed is", "minCharactersError": "The number of characters should not be less than the minimum value:", "maxCharactersError": "The number of characters should not be more than the maximum value:", "freeEmailError": "Free email accounts are not allowed", "minSelectionsError": "The minimum required number of selections is ", "maxSelectionsError": "The maximum number of selections allowed is ", "pastDatesDisallowed": "Date must not be in the past.", "dateLimited": "This date is unavailable.", "dateInvalid": "This date is not valid. The date format is {format}", "dateInvalidSeparate": "This date is not valid. Enter a valid {element}.", "ageVerificationError": "You must be older than {minAge} years old to submit this form.", "multipleFileUploads_typeError": "{file} has invalid extension. Only {extensions} are allowed.", "multipleFileUploads_sizeError": "{file} is too large, maximum file size is {sizeLimit}.", "multipleFileUploads_minSizeError": "{file} is too small, minimum file size is {minSizeLimit}.", "multipleFileUploads_emptyError": "{file} is empty, please select files again without it.", "multipleFileUploads_uploadFailed": "File upload failed, please remove it and upload the file again.", "multipleFileUploads_onLeave": "The files are being uploaded, if you leave now the upload will be cancelled.", "multipleFileUploads_fileLimitError": "Only {fileLimit} file uploads allowed.", "dragAndDropFilesHere_infoMessage": "Drag and drop files here", "chooseAFile_infoMessage": "Choose a file", "maxFileSize_infoMessage": "Max. file size", "generalError": "There are errors on the form. Please fix them before continuing.", "generalPageError": "There are errors on this page. Please fix them before continuing.", "wordLimitError": "Too many words. The limit is", "wordMinLimitError": "Too few words.  The minimum is", "characterLimitError": "Too many Characters.  The limit is", "characterMinLimitError": "Too few characters. The minimum is", "ccInvalidNumber": "Credit Card Number is invalid.", "ccInvalidCVC": "CVC number is invalid.", "ccInvalidExpireDate": "Expire date is invalid.", "ccInvalidExpireMonth": "Expiration month is invalid.", "ccInvalidExpireYear": "Expiration year is invalid.", "ccMissingDetails": "Please fill up the credit card details.", "ccMissingProduct": "Please select at least one product.", "ccMissingDonation": "Please enter numeric values for donation amount.", "disallowDecimals": "Please enter a whole number.", "restrictedDomain": "This domain is not allowed", "ccDonationMinLimitError": "Minimum amount is {minAmount} {currency}", "requiredLegend": "All fields marked with * are required and must be filled.", "geoPermissionTitle": "Permission Denied", "geoPermissionDesc": "Check your browser's privacy settings.", "geoNotAvailableTitle": "Position Unavailable", "geoNotAvailableDesc": "Location provider not available. Please enter the address manually.", "geoTimeoutTitle": "Timeout", "geoTimeoutDesc": "Please check your internet connection and try again.", "selectedTime": "Selected Time", "formerSelectedTime": "Former Time", "cancelAppointment": "Cancel Appointment", "cancelSelection": "Cancel Selection", "noSlotsAvailable": "No slots available", "slotUnavailable": "{time} on {date} has been selected is unavailable. Please select another slot.", "multipleError": "There are {count} errors on this page. Please correct them before moving on.", "oneError": "There is {count} error on this page. Please correct it before moving on.", "doneMessage": "Well done! All errors are fixed.", "invalidTime": "Enter a valid time", "doneButton": "Done", "reviewSubmitText": "Review and Submit", "nextButtonText": "Next", "prevButtonText": "Previous", "seeErrorsButton": "See Errors", "notEnoughStock": "Not enough stock for the current selection", "notEnoughStock_remainedItems": "Not enough stock for the current selection ({count} items left)", "soldOut": "Sold Out", "justSoldOut": "Just Sold Out", "selectionSoldOut": "Selection Sold Out", "subProductItemsLeft": "({count} items left)", "startButtonText": "START", "submitButtonText": "Submit", "submissionLimit": "Sorry! Only one entry is allowed. Multiple submissions are disabled for this form.", "reviewBackText": "Back to Form", "seeAllText": "See All", "progressMiddleText": "of", "fieldError": "field has an error.", "error": "Error" };
+        JotForm.newPaymentUI = true;
+        JotForm.replaceTagTest = true;
+        JotForm.submitError = "jumpToFirstError";
+        window.addEventListener('DOMContentLoaded', function () { window.brandingFooter.init({ "formID": 240916527319662, "campaign": "powered_by_jotform_le", "isCardForm": false, "isLegacyForm": true }) });
+        JotForm.init(function () {
+            /*INIT-START*/
+            if (window.JotForm && JotForm.accessible) $('input_2').setAttribute('tabindex', 0);
+            JotForm.setPhoneMaskingValidator('input_36_full', '\u0028\u0023\u0023\u0023\u0029 \u0023\u0023\u0023\u002d\u0023\u0023\u0023\u0023');
+
+            JotForm.calendarMonths = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"];
+            if (!JotForm.calenderViewMonths) JotForm.calenderViewMonths = {}; JotForm.calenderViewMonths[4] = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"];
+            if (!JotForm.calenderViewDays) JotForm.calenderViewDays = {}; JotForm.calenderViewDays[4] = ["Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado", "Domingo"];
+            JotForm.calendarDays = ["Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado", "Domingo"];
+            JotForm.calendarOther = { "today": "Hoje" };
+            var languageOptions = document.querySelectorAll('#langList li');
+            for (var langIndex = 0; langIndex < languageOptions.length; langIndex++) {
+                languageOptions[langIndex].on('click', function (e) { setTimeout(function () { JotForm.setCalendar("4", false, { "days": { "monday": true, "tuesday": true, "wednesday": true, "thursday": true, "friday": true, "saturday": true, "sunday": true }, "future": true, "past": true, "custom": false, "ranges": false, "start": "", "end": "", "countSelectedDaysOnly": false }); }, 0); });
+            }
+            JotForm.onTranslationsFetch(function () { JotForm.setCalendar("4", false, { "days": { "monday": true, "tuesday": true, "wednesday": true, "thursday": true, "friday": true, "saturday": true, "sunday": true }, "future": true, "past": true, "custom": false, "ranges": false, "start": "", "end": "", "countSelectedDaysOnly": false }); });
+            if (window.JotForm && JotForm.accessible) $('input_5').setAttribute('tabindex', 0);
+            if (window.JotForm && JotForm.accessible) $('input_9').setAttribute('tabindex', 0);
+            if (window.JotForm && JotForm.accessible) $('input_10').setAttribute('tabindex', 0);
+            if (window.JotForm && JotForm.accessible) $('input_11').setAttribute('tabindex', 0);
+            if (window.JotForm && JotForm.accessible) $('input_12').setAttribute('tabindex', 0);
+            if (window.JotForm && JotForm.accessible) $('input_13').setAttribute('tabindex', 0);
+
+            JotForm.calendarMonths = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+            if (!JotForm.calenderViewMonths) JotForm.calenderViewMonths = {}; JotForm.calenderViewMonths[14] = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+            if (!JotForm.calenderViewDays) JotForm.calenderViewDays = {}; JotForm.calenderViewDays[14] = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+            JotForm.calendarDays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+            JotForm.calendarOther = { "today": "Today" };
+            var languageOptions = document.querySelectorAll('#langList li');
+            for (var langIndex = 0; langIndex < languageOptions.length; langIndex++) {
+                languageOptions[langIndex].on('click', function (e) { setTimeout(function () { JotForm.setCalendar("14", false, { "days": { "monday": true, "tuesday": true, "wednesday": true, "thursday": true, "friday": true, "saturday": true, "sunday": true }, "future": true, "past": true, "custom": false, "ranges": false, "start": "", "end": "", "countSelectedDaysOnly": false }); }, 0); });
+            }
+            JotForm.onTranslationsFetch(function () { JotForm.setCalendar("14", false, { "days": { "monday": true, "tuesday": true, "wednesday": true, "thursday": true, "friday": true, "saturday": true, "sunday": true }, "future": true, "past": true, "custom": false, "ranges": false, "start": "", "end": "", "countSelectedDaysOnly": false }); });
+            if (window.JotForm && JotForm.accessible) $('input_15').setAttribute('tabindex', 0);
+            if (window.JotForm && JotForm.accessible) $('input_20').setAttribute('tabindex', 0);
+            JotForm.description('input_21', 'Caso tenha dependentes até 14 anos, envie cópia do RG com número de CPF para cadastro do Salário Família. Filhos sem CPF não recebem Salário Família.');
+            if (window.JotForm && JotForm.accessible) $('input_22').setAttribute('tabindex', 0);
+            if (window.JotForm && JotForm.accessible) $('input_23').setAttribute('tabindex', 0);
+            JotForm.alterTexts({ "ageVerificationError": "You must be older than {minAge} years old to submit this form.", "alphabetic": "This field can only contain letters", "alphanumeric": "This field can only contain letters and numbers.", "appointmentSelected": "You’ve selected {time} on {date}", "ccDonationMinLimitError": "Minimum amount is {minAmount} {currency}", "ccInvalidCVC": "CVC number is invalid.", "ccInvalidExpireDate": "Expire date is invalid.", "ccInvalidExpireMonth": "Expiration month is invalid.", "ccInvalidExpireYear": "Expiration year is invalid.", "ccInvalidNumber": "Credit Card Number is invalid.", "ccMissingDetails": "Please fill up the credit card details.", "ccMissingDonation": "Please enter numeric values for donation amount.", "ccMissingProduct": "Please select at least one product.", "characterLimitError": "Too many Characters.  The limit is", "characterMinLimitError": "Too few characters. The minimum is", "confirmClearForm": "Are you sure you want to clear the form", "confirmEmail": "E-mail does not match", "currency": "This field can only contain currency values.", "cyrillic": "This field can only contain cyrillic characters", "dateInvalid": "This date is not valid. The date format is {format}", "dateInvalidSeparate": "This date is not valid. Enter a valid {element}.", "dateLimited": "This date is unavailable.", "disallowDecimals": "Please enter a whole number.", "doneButton": "Done", "doneMessage": "Well done! All errors are fixed.", "dragAndDropFilesHere_infoMessage": "Drag and drop files here", "email": "Enter a valid e-mail address", "fillMask": "Field value must fill mask.", "freeEmailError": "Free email accounts are not allowed", "generalError": "There are errors on the form. Please fix them before continuing.", "generalPageError": "There are errors on this page. Please fix them before continuing.", "geoNotAvailableDesc": "Location provider not available. Please enter the address manually.", "geoNotAvailableTitle": "Position Unavailable", "geoPermissionDesc": "Check your browser's privacy settings.", "geoPermissionTitle": "Permission Denied", "geoTimeoutDesc": "Please check your internet connection and try again.", "geoTimeoutTitle": "Timeout", "gradingScoreError": "Score total should only be less than or equal to", "incompleteFields": "There are incomplete required fields. Please complete them.", "inputCarretErrorA": "Input should not be less than the minimum value:", "inputCarretErrorB": "Input should not be greater than the maximum value:", "justSoldOut": "Just Sold Out", "lessThan": "Your score should be less than or equal to", "maxDigitsError": "The maximum digits allowed is", "maxFileSize_infoMessage": "Max. file size", "maxSelectionsError": "The maximum number of selections allowed is ", "minCharactersError": "The number of characters should not be less than the minimum value:", "minSelectionsError": "The minimum required number of selections is ", "multipleError": "There are {count} errors in this page. Please correct them before moving on.", "multipleFileUploads_emptyError": "{file} is empty, please select files again without it.", "multipleFileUploads_fileLimitError": "Only {fileLimit} file uploads allowed.", "multipleFileUploads_minSizeError": "{file} is too small, minimum file size is {minSizeLimit}.", "multipleFileUploads_onLeave": "The files are being uploaded, if you leave now the upload will be cancelled.", "multipleFileUploads_sizeError": "{file} is too large, maximum file size is {sizeLimit}.", "multipleFileUploads_typeError": "{file} has invalid extension. Only {extensions} are allowed.", "multipleFileUploads_uploadFailed": "File upload failed, please remove it and upload the file again.", "nextButtonText": "Next", "noSlotsAvailable": "No slots available", "notEnoughStock": "Not enough stock for the current selection", "notEnoughStock_remainedItems": "Not enough stock for the current selection ({count} items left)", "noUploadExtensions": "File has no extension file type (e.g. .txt, .png, .jpeg)", "numeric": "This field can only contain numeric values", "oneError": "There is {count} error in this page. Please correct it before moving on.", "pastDatesDisallowed": "Date must not be in the past.", "pleaseWait": "Please wait...", "prevButtonText": "Previous", "progressMiddleText": "of", "required": "This field is required.", "requiredLegend": "All fields marked with * are required and must be filled.", "requireEveryCell": "Every cell is required.", "requireEveryRow": "Every row is required.", "requireOne": "At least one field required.", "restrictedDomain": "This domain is not allowed", "reviewBackText": "Back to Form", "reviewSubmitText": "Review and Submit", "seeAllText": "See All", "seeErrorsButton": "See Errors", "selectionSoldOut": "Selection Sold Out", "slotUnavailable": "{time} on {date} has been selected is unavailable. Please select another slot.", "soldOut": "Sold Out", "submissionLimit": "Sorry! Only one entry is allowed. &lt;br&gt; Multiple submissions are disabled for this form.", "submitButtonText": "Submit", "subProductItemsLeft": "({count} items left)", "uploadExtensions": "You can only upload following files:", "uploadFilesize": "File size cannot be bigger than:", "uploadFilesizemin": "File size cannot be smaller than:", "url": "This field can only contain a valid URL", "validateEmail": "You need to validate this e-mail", "wordLimitError": "Too many words. The limit is", "wordMinLimitError": "Too few words.  The minimum is" });
+            /*INIT-END*/
+        });
+
+        setTimeout(function () {
+            JotForm.paymentExtrasOnTheFly([null, null, { "name": "nomeCompleto2", "qid": "2", "text": "Nome Completo:", "type": "control_textbox" }, null, { "name": "dataDe4", "qid": "4", "text": "Data de Contratacao:", "type": "control_datetime" }, { "name": "suaFuncao", "qid": "5", "text": "Sua funcao:", "type": "control_textbox" }, null, null, null, { "name": "rg", "qid": "9", "text": "RG:", "type": "control_textbox" }, { "name": "dataDe", "qid": "10", "text": "Data de Emissao do RG:", "type": "control_textbox" }, { "name": "cpfCom", "qid": "11", "text": "CPF com pontos e traco:", "type": "control_textbox" }, { "name": "numeroDo12", "qid": "12", "text": "Numero do PIS (11 digitos)", "type": "control_textbox" }, { "name": "nDa", "qid": "13", "text": "Nº da carteira de trabalho e Nº de serie.", "type": "control_textbox" }, { "name": "dataDe14", "qid": "14", "text": "Data de Nascimento:", "type": "control_datetime" }, { "name": "cidadeE15", "qid": "15", "text": "Cidade e Estado de Nascimento:", "type": "control_textbox" }, { "name": "grauDe16", "qid": "16", "text": "Grau de Instrucao:", "type": "control_checkbox" }, { "name": "generoBiologico17", "qid": "17", "text": "Genero Biologico:", "type": "control_checkbox" }, { "name": "racaE18", "qid": "18", "text": "Raca e Cor:", "type": "control_checkbox" }, { "name": "estadoCivil19", "qid": "19", "text": "Estado Civil:", "type": "control_checkbox" }, { "name": "nomeDo", "qid": "20", "text": "Nome do Conjuge (se houver):", "type": "control_textbox" }, { "description": "Caso tenha dependentes ate 14 anos, envie copia do RG com numero de CPF para cadastro do Salario Familia. Filhos sem CPF nao recebem Salario Familia.", "name": "temFilhosdependentes21", "qid": "21", "text": "Tem filhos\u002Fdependentes ate 14 anos?", "type": "control_checkbox" }, { "name": "nomeDo22", "qid": "22", "text": "Nome do Pai:", "type": "control_textbox" }, { "name": "nomeDa", "qid": "23", "text": "Nome da Mae:", "type": "control_textbox" }, null, null, null, { "name": "declaroPara", "qid": "27", "text": "Declaro para os devidos fins que as informacoes constantes neste formulario sao fieis a verdade e condizentes com a realidade dos fatos a epoca. Declaro que todas as informacoes mencionadas nesse formulario foram extraidas dos documentos e sao de minha responsabilidade. Alem disso, fui informado que se houver qualquer alteracao nesta Declaracao, a mesma devera ser modificada junto ao Departamento de Recursos Humanos. Por fim, fico ciente que atraves desse documento a falsidade das informacoes configura crime previsto no Codigo Penal Brasileiro e passivel de apuracao na forma da Lei. Nada mais a declarar, e ciente das responsabilidades pelas declaracoes prestadas, firmo a presente. ", "type": "control_head" }, { "name": "e", "qid": "28", "text": "Enviar", "type": "control_button" }, null, { "name": "cadastro", "qid": "30", "text": "Cadastro", "type": "control_head" }, null, null, null, null, { "name": "endereco35", "qid": "35", "text": "Endereco:", "type": "control_address" }, { "name": "telefoneDo", "qid": "36", "text": "Telefone do Funcionario:", "type": "control_phone" }]);
+        }, 20); 
+    </script>
+</head>
+
+<body>
+    <div class="corpo">
+        <aside class="menu-lateral">
+            <div class="nome-foto">
+                <img src="img/favicon.png" alt="">
+                <h1> Cristhiane Rodrigues</h1>
+                <p> Mafhic Consultoria Cursos e Treinamentos</p>
+            </div>
+            <nav style="font-weight: bold;">
+                <a href="../index.html">SAIR</a>
+                <a href="#sobre-mim" style="color:red">CADASTRAR</a>
+                <a href="#contato">CURRÍCULOS</a>
+            </nav>
+        </aside>
+
+
+
+        <main>
+            <header id="comecar">
+                <h2><span class="span">CADASTRO</span> </h2>
+
+            </header>
+            <form class="jotform-form"
+                onsubmit="return typeof testSubmitFunction !== 'undefined' && testSubmitFunction();"
+                action="https://submit.jotform.com/submit/240916527319662" method="post" name="form_240916527319662"
+                id="240916527319662" accept-charset="utf-8" autocomplete="on"><input type="hidden" name="formID"
+                    value="240916527319662" /><input type="hidden" id="JWTContainer" value="" /><input type="hidden"
+                    id="cardinalOrderNumber" value="" /><input type="hidden" id="jsExecutionTracker"
+                    name="jsExecutionTracker" value="build-date-1712002858245" /><input type="hidden" id="submitSource"
+                    name="submitSource" value="unknown" /><input type="hidden" id="buildDate" name="buildDate"
+                    value="1712002858245" />
+                <div role="main" class="form-all">
+                    <ul class="form-section page-section">
+                        <li id="cid_30" class="form-input-wide" data-type="control_head">
+                            <div class="form-header-group  header-large">
+                                <div class="header-text httac htvam">
+                                    <h1 id="header_30" class="form-header" data-component="header">Cadastro</h1>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="form-line form-line-column form-col-1" data-type="control_textbox" id="id_2"><label
+                                class="form-label form-label-top form-label-auto" id="label_2" for="input_2"
+                                aria-hidden="false"> Nome Completo: </label>
+                            <div id="cid_2" class="form-input-wide" data-layout="half"> <input type="text" id="input_2"
+                                    name="q2_nomeCompleto2" data-type="input-textbox" class="form-textbox"
+                                    data-defaultvalue="" style="width:310px" size="310" data-component="textbox"
+                                    aria-labelledby="label_2" value="" /> </div>
+                        </li>
+                        <li class="form-line form-line-column form-col-2" data-type="control_phone" id="id_36"><label
+                                class="form-label form-label-top form-label-auto" id="label_36" for="input_36_full">
+                                Telefone do Funcionário: </label>
+                            <div id="cid_36" class="form-input-wide" data-layout="half"> <span
+                                    class="form-sub-label-container" style="vertical-align:top"><input type="tel"
+                                        id="input_36_full" name="q36_telefoneDo[full]" data-type="mask-number"
+                                        class="mask-phone-number form-textbox validate[Fill Mask]" data-defaultvalue=""
+                                        autoComplete="section-input_36 tel-national" style="width:310px"
+                                        data-masked="true" placeholder="(000) 000-0000" data-component="phone"
+                                        aria-labelledby="label_36" value="" /></span> </div>
+                        </li>
+                        <li class="form-line form-line-column form-col-3" data-type="control_datetime" id="id_4"><label
+                                class="form-label form-label-top form-label-auto" id="label_4" for="lite_mode_4"
+                                aria-hidden="false"> Data de Contratação: </label>
+                            <div id="cid_4" class="form-input-wide" data-layout="half">
+                                <div data-wrapper-react="true">
+                                    <div style="display:none"><span class="form-sub-label-container"
+                                            style="vertical-align:top"><input type="tel"
+                                                class="form-textbox validate[limitDate]" id="day_4"
+                                                name="q4_dataDe4[day]" size="2" data-maxlength="2" data-age=""
+                                                maxLength="2" value="" autoComplete="off"
+                                                aria-labelledby="label_4 sublabel_4_day" /><span class="date-separate"
+                                                aria-hidden="true"> /</span><label class="form-sub-label" for="day_4"
+                                                id="sublabel_4_day" style="min-height:13px">Day</label></span><span
+                                            class="form-sub-label-container" style="vertical-align:top"><input
+                                                type="tel" class="form-textbox validate[limitDate]" id="month_4"
+                                                name="q4_dataDe4[month]" size="2" data-maxlength="2" data-age=""
+                                                maxLength="2" value="" autoComplete="off"
+                                                aria-labelledby="label_4 sublabel_4_month" /><span class="date-separate"
+                                                aria-hidden="true"> /</span><label class="form-sub-label" for="month_4"
+                                                id="sublabel_4_month" style="min-height:13px">Month</label></span><span
+                                            class="form-sub-label-container" style="vertical-align:top"><input
+                                                type="tel" class="form-textbox validate[limitDate]" id="year_4"
+                                                name="q4_dataDe4[year]" size="4" data-maxlength="4" data-age=""
+                                                maxLength="4" value="" autoComplete="off"
+                                                aria-labelledby="label_4 sublabel_4_year" /><label
+                                                class="form-sub-label" for="year_4" id="sublabel_4_year"
+                                                style="min-height:13px">Year</label></span></div><span
+                                        class="form-sub-label-container" style="vertical-align:top"><input type="text"
+                                            class="form-textbox validate[limitDate, validateLiteDate]" id="lite_mode_4"
+                                            size="12" data-maxlength="12" maxLength="12" data-age="" value=""
+                                            data-format="ddmmyyyy" data-seperator="/" placeholder="DD/MM/YYYY"
+                                            data-placeholder="DD/MM/YYYY" autoComplete="off"
+                                            aria-labelledby="label_4 sublabel_4_litemode" /><img
+                                            class=" newDefaultTheme-dateIcon icon-liteMode" alt="Pick a Date"
+                                            id="input_4_pick" src="https://cdn.jotfor.ms/images/calendar.png"
+                                            data-component="datetime" aria-hidden="true" data-allow-time="No"
+                                            data-version="v2" /><label class="form-sub-label" for="lite_mode_4"
+                                            id="sublabel_4_litemode" style="min-height:13px">Data</label></span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="form-line form-line-column form-col-4" data-type="control_textbox" id="id_5"><label
+                                class="form-label form-label-top form-label-auto" id="label_5" for="input_5"
+                                aria-hidden="false"> Sua função: </label>
+                            <div id="cid_5" class="form-input-wide" data-layout="half"> <input type="text" id="input_5"
+                                    name="q5_suaFuncao" data-type="input-textbox" class="form-textbox"
+                                    data-defaultvalue="" style="width:310px" size="310" data-component="textbox"
+                                    aria-labelledby="label_5" value="" /> </div>
+                        </li>
+                        <li class="form-line form-line-column form-col-5" data-type="control_textbox" id="id_9"><label
+                                class="form-label form-label-top form-label-auto" id="label_9" for="input_9"
+                                aria-hidden="false"> RG: </label>
+                            <div id="cid_9" class="form-input-wide" data-layout="half"> <input type="text" id="input_9"
+                                    name="q9_rg" data-type="input-textbox" class="form-textbox" data-defaultvalue=""
+                                    style="width:310px" size="310" data-component="textbox" aria-labelledby="label_9"
+                                    value="" /> </div>
+                        </li>
+                        <li class="form-line form-line-column form-col-6" data-type="control_textbox" id="id_10"><label
+                                class="form-label form-label-top form-label-auto" id="label_10" for="input_10"
+                                aria-hidden="false"> Data de Emissão do RG: </label>
+                            <div id="cid_10" class="form-input-wide" data-layout="half"> <input type="text"
+                                    id="input_10" name="q10_dataDe" data-type="input-textbox" class="form-textbox"
+                                    data-defaultvalue="" style="width:310px" size="310" data-component="textbox"
+                                    aria-labelledby="label_10" value="" /> </div>
+                        </li>
+                        <li class="form-line form-line-column form-col-7" data-type="control_textbox" id="id_11"><label
+                                class="form-label form-label-top form-label-auto" id="label_11" for="input_11"
+                                aria-hidden="false"> CPF com pontos e traço: </label>
+                            <div id="cid_11" class="form-input-wide" data-layout="half"> <input type="text"
+                                    id="input_11" name="q11_cpfCom" data-type="input-textbox" class="form-textbox"
+                                    data-defaultvalue="" style="width:310px" size="310" data-component="textbox"
+                                    aria-labelledby="label_11" value="" /> </div>
+                        </li>
+                        <li class="form-line form-line-column form-col-8" data-type="control_textbox" id="id_12"><label
+                                class="form-label form-label-top form-label-auto" id="label_12" for="input_12"
+                                aria-hidden="false"> Número do PIS (11 dígitos) </label>
+                            <div id="cid_12" class="form-input-wide" data-layout="half"> <input type="text"
+                                    id="input_12" name="q12_numeroDo12" data-type="input-textbox" class="form-textbox"
+                                    data-defaultvalue="" style="width:310px" size="310" data-component="textbox"
+                                    aria-labelledby="label_12" value="" /> </div>
+                        </li>
+                        <li class="form-line form-line-column form-col-9" data-type="control_textbox" id="id_13"><label
+                                class="form-label form-label-top form-label-auto" id="label_13" for="input_13"
+                                aria-hidden="false"> Nº da carteira de trabalho e Nº de série. </label>
+                            <div id="cid_13" class="form-input-wide" data-layout="half"> <input type="text"
+                                    id="input_13" name="q13_nDa" data-type="input-textbox" class="form-textbox"
+                                    data-defaultvalue="" style="width:310px" size="310" data-component="textbox"
+                                    aria-labelledby="label_13" value="" /> </div>
+                        </li>
+                        <li class="form-line form-line-column form-col-10" data-type="control_datetime" id="id_14">
+                            <label class="form-label form-label-top form-label-auto" id="label_14" for="lite_mode_14"
+                                aria-hidden="false"> Data de Nascimento: </label>
+                            <div id="cid_14" class="form-input-wide" data-layout="half">
+                                <div data-wrapper-react="true">
+                                    <div style="display:none"><span class="form-sub-label-container"
+                                            style="vertical-align:top"><input type="tel"
+                                                class="form-textbox validate[limitDate]" id="day_14"
+                                                name="q14_dataDe14[day]" size="2" data-maxlength="2" data-age=""
+                                                maxLength="2" value="" autoComplete="off"
+                                                aria-labelledby="label_14 sublabel_14_day" /><span class="date-separate"
+                                                aria-hidden="true"> /</span><label class="form-sub-label" for="day_14"
+                                                id="sublabel_14_day" style="min-height:13px">Day</label></span><span
+                                            class="form-sub-label-container" style="vertical-align:top"><input
+                                                type="tel" class="form-textbox validate[limitDate]" id="month_14"
+                                                name="q14_dataDe14[month]" size="2" data-maxlength="2" data-age=""
+                                                maxLength="2" value="" autoComplete="off"
+                                                aria-labelledby="label_14 sublabel_14_month" /><span
+                                                class="date-separate" aria-hidden="true"> /</span><label
+                                                class="form-sub-label" for="month_14" id="sublabel_14_month"
+                                                style="min-height:13px">Month</label></span><span
+                                            class="form-sub-label-container" style="vertical-align:top"><input
+                                                type="tel" class="form-textbox validate[limitDate]" id="year_14"
+                                                name="q14_dataDe14[year]" size="4" data-maxlength="4" data-age=""
+                                                maxLength="4" value="" autoComplete="off"
+                                                aria-labelledby="label_14 sublabel_14_year" /><label
+                                                class="form-sub-label" for="year_14" id="sublabel_14_year"
+                                                style="min-height:13px">Year</label></span></div><span
+                                        class="form-sub-label-container" style="vertical-align:top"><input type="text"
+                                            class="form-textbox validate[limitDate, validateLiteDate]" id="lite_mode_14"
+                                            size="12" data-maxlength="12" maxLength="12" data-age="" value=""
+                                            data-format="ddmmyyyy" data-seperator="/" placeholder="DD/MM/YYYY"
+                                            data-placeholder="DD/MM/YYYY" autoComplete="off"
+                                            aria-labelledby="label_14 sublabel_14_litemode" /><img
+                                            class=" newDefaultTheme-dateIcon icon-liteMode" alt="Pick a Date"
+                                            id="input_14_pick" src="https://cdn.jotfor.ms/images/calendar.png"
+                                            data-component="datetime" aria-hidden="true" data-allow-time="No"
+                                            data-version="v2" /><label class="form-sub-label" for="lite_mode_14"
+                                            id="sublabel_14_litemode" style="min-height:13px">Data de
+                                            Nascimento</label></span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="form-line" data-type="control_textbox" id="id_15"><label
+                                class="form-label form-label-top form-label-auto" id="label_15" for="input_15"
+                                aria-hidden="false"> Cidade e Estado de Nascimento: </label>
+                            <div id="cid_15" class="form-input-wide" data-layout="half"> <input type="text"
+                                    id="input_15" name="q15_cidadeE15" data-type="input-textbox" class="form-textbox"
+                                    data-defaultvalue="" style="width:310px" size="310" data-component="textbox"
+                                    aria-labelledby="label_15" value="" /> </div>
+                        </li>
+                        <li class="form-line form-line-column form-col-1" data-type="control_checkbox" id="id_16"><label
+                                class="form-label form-label-top form-label-auto" id="label_16" aria-hidden="false">
+                                Grau de Instrução: </label>
+                            <div id="cid_16" class="form-input-wide" data-layout="full">
+                                <div class="form-single-column" role="group" aria-labelledby="label_16"
+                                    data-component="checkbox"><span class="form-checkbox-item" style="clear:left"><span
+                                            class="dragger-item"></span><input type="checkbox"
+                                            aria-describedby="label_16" class="form-checkbox" id="input_16_0"
+                                            name="q16_grauDe16[]" value="Ensino Fundamental Completo" /><label
+                                            id="label_input_16_0" for="input_16_0">Ensino Fundamental
+                                            Completo</label></span><span class="form-checkbox-item"
+                                        style="clear:left"><span class="dragger-item"></span><input type="checkbox"
+                                            aria-describedby="label_16" class="form-checkbox" id="input_16_1"
+                                            name="q16_grauDe16[]" value="Ensino Médio Incompleto" /><label
+                                            id="label_input_16_1" for="input_16_1">Ensino Médio
+                                            Incompleto</label></span><span class="form-checkbox-item"
+                                        style="clear:left"><span class="dragger-item"></span><input type="checkbox"
+                                            aria-describedby="label_16" class="form-checkbox" id="input_16_2"
+                                            name="q16_grauDe16[]" value="Ensino Médio Completo" /><label
+                                            id="label_input_16_2" for="input_16_2">Ensino Médio
+                                            Completo</label></span><span class="form-checkbox-item"
+                                        style="clear:left"><span class="dragger-item"></span><input type="checkbox"
+                                            aria-describedby="label_16" class="form-checkbox" id="input_16_3"
+                                            name="q16_grauDe16[]" value="Ensino Superior Completo" /><label
+                                            id="label_input_16_3" for="input_16_3">Ensino Superior
+                                            Completo</label></span><span class="form-checkbox-item"
+                                        style="clear:left"><span class="dragger-item"></span><input type="checkbox"
+                                            aria-describedby="label_16" class="form-checkbox" id="input_16_4"
+                                            name="q16_grauDe16[]" value="Ensino Superior Incompleto" /><label
+                                            id="label_input_16_4" for="input_16_4">Ensino Superior
+                                            Incompleto</label></span><span class="form-checkbox-item"
+                                        style="clear:left"><span class="dragger-item"></span><input type="checkbox"
+                                            aria-describedby="label_16" class="form-checkbox" id="input_16_5"
+                                            name="q16_grauDe16[]" value="Pós Graduação" /><label id="label_input_16_5"
+                                            for="input_16_5">Pós Graduação</label></span><span
+                                        class="form-checkbox-item" style="clear:left"><span
+                                            class="dragger-item"></span><input type="checkbox"
+                                            aria-describedby="label_16" class="form-checkbox" id="input_16_6"
+                                            name="q16_grauDe16[]" value="Mestrado/Doutorado" /><label
+                                            id="label_input_16_6" for="input_16_6">Mestrado/Doutorado</label></span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="form-line form-line-column form-col-2" data-type="control_checkbox" id="id_17"><label
+                                class="form-label form-label-top form-label-auto" id="label_17" aria-hidden="false">
+                                Gênero Biológico: </label>
+                            <div id="cid_17" class="form-input-wide" data-layout="full">
+                                <div class="form-single-column" role="group" aria-labelledby="label_17"
+                                    data-component="checkbox"><span class="form-checkbox-item" style="clear:left"><span
+                                            class="dragger-item"></span><input type="checkbox"
+                                            aria-describedby="label_17" class="form-checkbox" id="input_17_0"
+                                            name="q17_generoBiologico17[]" value="Masculino" /><label
+                                            id="label_input_17_0" for="input_17_0">Masculino</label></span><span
+                                        class="form-checkbox-item" style="clear:left"><span
+                                            class="dragger-item"></span><input type="checkbox"
+                                            aria-describedby="label_17" class="form-checkbox" id="input_17_1"
+                                            name="q17_generoBiologico17[]" value="Feminino" /><label
+                                            id="label_input_17_1" for="input_17_1">Feminino</label></span></div>
+                            </div>
+                        </li>
+                        <li class="form-line form-line-column form-col-3" data-type="control_checkbox" id="id_18"><label
+                                class="form-label form-label-top form-label-auto" id="label_18" aria-hidden="false">
+                                Raça e Cor: </label>
+                            <div id="cid_18" class="form-input-wide" data-layout="full">
+                                <div class="form-single-column" role="group" aria-labelledby="label_18"
+                                    data-component="checkbox"><span class="form-checkbox-item" style="clear:left"><span
+                                            class="dragger-item"></span><input type="checkbox"
+                                            aria-describedby="label_18" class="form-checkbox" id="input_18_0"
+                                            name="q18_racaE18[]" value="Branco" /><label id="label_input_18_0"
+                                            for="input_18_0">Branco</label></span><span class="form-checkbox-item"
+                                        style="clear:left"><span class="dragger-item"></span><input type="checkbox"
+                                            aria-describedby="label_18" class="form-checkbox" id="input_18_1"
+                                            name="q18_racaE18[]" value="Negro" /><label id="label_input_18_1"
+                                            for="input_18_1">Negro</label></span><span class="form-checkbox-item"
+                                        style="clear:left"><span class="dragger-item"></span><input type="checkbox"
+                                            aria-describedby="label_18" class="form-checkbox" id="input_18_2"
+                                            name="q18_racaE18[]" value="Pardo" /><label id="label_input_18_2"
+                                            for="input_18_2">Pardo</label></span><span class="form-checkbox-item"
+                                        style="clear:left"><span class="dragger-item"></span><input type="checkbox"
+                                            aria-describedby="label_18" class="form-checkbox" id="input_18_3"
+                                            name="q18_racaE18[]" value="Indígena" /><label id="label_input_18_3"
+                                            for="input_18_3">Indígena</label></span><span class="form-checkbox-item"
+                                        style="clear:left"><span class="dragger-item"></span><input type="checkbox"
+                                            aria-describedby="label_18" class="form-checkbox" id="input_18_4"
+                                            name="q18_racaE18[]"
+                                            value="Amarelo (de origem japonesa, coreana e etc)" /><label
+                                            id="label_input_18_4" for="input_18_4">Amarelo (de origem japonesa, coreana
+                                            e etc)</label></span></div>
+                            </div>
+                        </li>
+                        <li class="form-line form-line-column form-col-4" data-type="control_checkbox" id="id_19"><label
+                                class="form-label form-label-top form-label-auto" id="label_19" aria-hidden="false">
+                                Estado Civil: </label>
+                            <div id="cid_19" class="form-input-wide" data-layout="full">
+                                <div class="form-single-column" role="group" aria-labelledby="label_19"
+                                    data-component="checkbox"><span class="form-checkbox-item" style="clear:left"><span
+                                            class="dragger-item"></span><input type="checkbox"
+                                            aria-describedby="label_19" class="form-checkbox" id="input_19_0"
+                                            name="q19_estadoCivil19[]" value="Solteiro" /><label id="label_input_19_0"
+                                            for="input_19_0">Solteiro</label></span><span class="form-checkbox-item"
+                                        style="clear:left"><span class="dragger-item"></span><input type="checkbox"
+                                            aria-describedby="label_19" class="form-checkbox" id="input_19_1"
+                                            name="q19_estadoCivil19[]" value="Casado" /><label id="label_input_19_1"
+                                            for="input_19_1">Casado</label></span><span class="form-checkbox-item"
+                                        style="clear:left"><span class="dragger-item"></span><input type="checkbox"
+                                            aria-describedby="label_19" class="form-checkbox" id="input_19_2"
+                                            name="q19_estadoCivil19[]" value="Divorciado" /><label id="label_input_19_2"
+                                            for="input_19_2">Divorciado</label></span><span class="form-checkbox-item"
+                                        style="clear:left"><span class="dragger-item"></span><input type="checkbox"
+                                            aria-describedby="label_19" class="form-checkbox" id="input_19_3"
+                                            name="q19_estadoCivil19[]" value="União Estável" /><label
+                                            id="label_input_19_3" for="input_19_3">União Estável</label></span><span
+                                        class="form-checkbox-item" style="clear:left"><span
+                                            class="dragger-item"></span><input type="checkbox"
+                                            aria-describedby="label_19" class="form-checkbox" id="input_19_4"
+                                            name="q19_estadoCivil19[]" value="Viúvo" /><label id="label_input_19_4"
+                                            for="input_19_4">Viúvo</label></span></div>
+                            </div>
+                        </li>
+                        <li class="form-line form-line-column form-col-5" data-type="control_textbox" id="id_20"><label
+                                class="form-label form-label-top form-label-auto" id="label_20" for="input_20"
+                                aria-hidden="false"> Nome do Cônjuge (se houver): </label>
+                            <div id="cid_20" class="form-input-wide" data-layout="half"> <input type="text"
+                                    id="input_20" name="q20_nomeDo" data-type="input-textbox" class="form-textbox"
+                                    data-defaultvalue="" style="width:310px" size="310" data-component="textbox"
+                                    aria-labelledby="label_20" value="" /> </div>
+                        </li>
+                        <li class="form-line form-line-column form-col-6" data-type="control_checkbox" id="id_21"><label
+                                class="form-label form-label-top form-label-auto" id="label_21" aria-hidden="false"> Tem
+                                filhos/dependentes até 14 anos? </label>
+                            <div id="cid_21" class="form-input-wide" data-layout="full">
+                                <div class="form-single-column" role="group" aria-labelledby="label_21"
+                                    data-component="checkbox"><span class="form-checkbox-item" style="clear:left"><span
+                                            class="dragger-item"></span><input type="checkbox"
+                                            aria-describedby="label_21" class="form-checkbox" id="input_21_0"
+                                            name="q21_temFilhosdependentes21[]" value="Sim" /><label
+                                            id="label_input_21_0" for="input_21_0">Sim</label></span><span
+                                        class="form-checkbox-item" style="clear:left"><span
+                                            class="dragger-item"></span><input type="checkbox"
+                                            aria-describedby="label_21" class="form-checkbox" id="input_21_1"
+                                            name="q21_temFilhosdependentes21[]" value="Não" /><label
+                                            id="label_input_21_1" for="input_21_1">Não</label></span></div>
+                            </div>
+                        </li>
+                        <li class="form-line form-line-column form-col-7" data-type="control_textbox" id="id_22"><label
+                                class="form-label form-label-top form-label-auto" id="label_22" for="input_22"
+                                aria-hidden="false"> Nome do Pai: </label>
+                            <div id="cid_22" class="form-input-wide" data-layout="half"> <input type="text"
+                                    id="input_22" name="q22_nomeDo22" data-type="input-textbox" class="form-textbox"
+                                    data-defaultvalue="" style="width:310px" size="310" data-component="textbox"
+                                    aria-labelledby="label_22" value="" /> </div>
+                        </li>
+                        <li class="form-line form-line-column form-col-8" data-type="control_textbox" id="id_23"><label
+                                class="form-label form-label-top form-label-auto" id="label_23" for="input_23"
+                                aria-hidden="false"> Nome da Mãe: </label>
+                            <div id="cid_23" class="form-input-wide" data-layout="half"> <input type="text"
+                                    id="input_23" name="q23_nomeDa" data-type="input-textbox" class="form-textbox"
+                                    data-defaultvalue="" style="width:310px" size="310" data-component="textbox"
+                                    aria-labelledby="label_23" value="" /> </div>
+                        </li>
+                        <li class="form-line" data-type="control_address" id="id_35"
+                            data-compound-hint=",,,,Favor selecionar,,Favor selecionar,"><label
+                                class="form-label form-label-top form-label-auto" id="label_35"
+                                for="input_35_addr_line1" aria-hidden="false"> Endereço: </label>
+                            <div id="cid_35" class="form-input-wide" data-layout="full">
+                                <div summary="" class="form-address-table jsTest-addressField">
+                                    <div class="form-address-line-wrapper jsTest-address-line-wrapperField"><span
+                                            class="form-address-line form-address-street-line jsTest-address-lineField"><span
+                                                class="form-sub-label-container" style="vertical-align:top"><input
+                                                    type="text" id="input_35_addr_line1"
+                                                    name="q35_endereco35[addr_line1]"
+                                                    class="form-textbox form-address-line" data-defaultvalue=""
+                                                    autoComplete="section-input_35 address-line1"
+                                                    data-component="address_line_1"
+                                                    aria-labelledby="label_35 sublabel_35_addr_line1" required=""
+                                                    value="" /><label class="form-sub-label" for="input_35_addr_line1"
+                                                    id="sublabel_35_addr_line1"
+                                                    style="min-height:13px">Endereço</label></span></span></div>
+                                    <div class="form-address-line-wrapper jsTest-address-line-wrapperField"><span
+                                            class="form-address-line form-address-street-line jsTest-address-lineField"><span
+                                                class="form-sub-label-container" style="vertical-align:top"><input
+                                                    type="text" id="input_35_addr_line2"
+                                                    name="q35_endereco35[addr_line2]"
+                                                    class="form-textbox form-address-line" data-defaultvalue=""
+                                                    autoComplete="section-input_35 address-line2"
+                                                    data-component="address_line_2"
+                                                    aria-labelledby="label_35 sublabel_35_addr_line2" value="" /><label
+                                                    class="form-sub-label" for="input_35_addr_line2"
+                                                    id="sublabel_35_addr_line2"
+                                                    style="min-height:13px">Bairro</label></span></span></div>
+                                    <div class="form-address-line-wrapper jsTest-address-line-wrapperField"><span
+                                            class="form-address-line form-address-city-line jsTest-address-lineField "><span
+                                                class="form-sub-label-container" style="vertical-align:top"><input
+                                                    type="text" id="input_35_city" name="q35_endereco35[city]"
+                                                    class="form-textbox form-address-city" data-defaultvalue=""
+                                                    autoComplete="section-input_35 address-level2" data-component="city"
+                                                    aria-labelledby="label_35 sublabel_35_city" required=""
+                                                    value="" /><label class="form-sub-label" for="input_35_city"
+                                                    id="sublabel_35_city"
+                                                    style="min-height:13px">Cidade</label></span></span><span
+                                            class="form-address-line form-address-state-line jsTest-address-lineField "><span
+                                                class="form-sub-label-container" style="vertical-align:top"><input
+                                                    type="text" id="input_35_state" name="q35_endereco35[state]"
+                                                    class="form-textbox form-address-state" data-defaultvalue=""
+                                                    autoComplete="section-input_35 address-level1"
+                                                    data-component="state" aria-labelledby="label_35 sublabel_35_state"
+                                                    required="" value="" /><label class="form-sub-label"
+                                                    for="input_35_state" id="sublabel_35_state"
+                                                    style="min-height:13px">Estado</label></span></span></div>
+                                    <div class="form-address-line-wrapper jsTest-address-line-wrapperField"><span
+                                            class="form-address-line form-address-zip-line jsTest-address-lineField "><span
+                                                class="form-sub-label-container" style="vertical-align:top"><input
+                                                    type="text" id="input_35_postal" name="q35_endereco35[postal]"
+                                                    class="form-textbox form-address-postal" data-defaultvalue=""
+                                                    autoComplete="section-input_35 postal-code" data-component="zip"
+                                                    aria-labelledby="label_35 sublabel_35_postal" required=""
+                                                    value="" /><label class="form-sub-label" for="input_35_postal"
+                                                    id="sublabel_35_postal" style="min-height:13px">CEP / Código
+                                                    Postal</label></span></span></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li id="cid_27" class="form-input-wide" data-type="control_head">
+                            <div class="form-header-group  header-default">
+                                <div class="header-text httal htvam">
+                                    <h2 id="header_27" class="form-header" data-component="header">Declaro para os
+                                        devidos fins que as informações constantes neste formulário são fieis à verdade
+                                        e condizentes com a realidade dos fatos à época. Declaro que todas as
+                                        informações mencionadas nesse formulário foram extraídas dos documentos e são de
+                                        minha responsabilidade. Além disso, fui informado que se houver qualquer
+                                        alteração nesta Declaração, a mesma deverá ser modificada junto ao Departamento
+                                        de Recursos Humanos. Por fim, fico ciente que através desse documento a
+                                        falsidade das informações configura crime previsto no Código Penal Brasileiro e
+                                        passível de apuração na forma da Lei. Nada mais a declarar, e ciente das
+                                        responsabilidades pelas declarações prestadas, firmo a presente. </h2>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="form-line" data-type="control_button" id="id_28">
+                            <div id="cid_28" class="form-input-wide" data-layout="full">
+                                <div data-align="center"
+                                    class="form-buttons-wrapper form-buttons-center   jsTest-button-wrapperField">
+                                    <button id="input_28" type="submit"
+                                        class="form-submit-button submit-button jf-form-buttons jsTest-submitField"
+                                        data-component="button" data-content="">Enviar</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li style="clear:both"></li>
+                        <li style="display:none">Should be Empty: <input type="text" name="website" value=""
+                                type="hidden" /></li>
+                    </ul>
+                </div>
+                <script>
+                    JotForm.showJotFormPowered = "new_footer";
+                </script>
+                <script>
+                    JotForm.poweredByText = "Powered by Jotform";
+                </script><input type="hidden" class="simple_spc" id="simple_spc" name="simple_spc"
+                    value="240916527319662" />
+                <script type="text/javascript">
+                    var all_spc = document.querySelectorAll("form[id='240916527319662'] .si" + "mple" + "_spc");
+                    for (var i = 0; i < all_spc.length; i++) {
+                        all_spc[i].value = "240916527319662-240916527319662";
+                    }
+                </script>
+            </form>
+
+            <script src="script.js"></script>
+
+</body>
+
+</html>
