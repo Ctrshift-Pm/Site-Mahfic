@@ -1,18 +1,22 @@
 <?php
-    include("database.php");
-    
-    $usuario = "Mahfic";
-    $senha = "Cris011284";
-    $hash = password_hash($senha, PASSWORD_DEFAULT);
+include("database.php");
 
-    $sql = "INSERT INTO usuarios(nome_usuario, senha_usuario) VALUES ('$usuario', '$hash')";
+$usuario = getenv('MAHFIC_SEED_USER') ?: 'Mahfic';
+$senha = getenv('MAHFIC_SEED_PASSWORD') ?: '';
 
-    try{
-        mysqli_query($conexao, $sql);
-        echo"Usuario está registrado";
-    }
-    catch(mysqli_sql_exception){
-        echo"Erro ao registrar usuário";
-    }
-    mysqli_close($conexao); 
+if ($senha === '') {
+    exit('Defina MAHFIC_SEED_PASSWORD para criar o usuario inicial.');
+}
+
+$hash = password_hash($senha, PASSWORD_DEFAULT);
+$sql = "INSERT INTO usuarios(nome_usuario, senha_usuario) VALUES ('$usuario', '$hash')";
+
+try {
+    mysqli_query($link, $sql);
+    echo "Usuario está registrado";
+} catch (mysqli_sql_exception) {
+    echo "Erro ao registrar usuário";
+}
+
+mysqli_close($link);
 ?>

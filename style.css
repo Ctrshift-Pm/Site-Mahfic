@@ -31,22 +31,6 @@ a:hover {
   padding: 16px;
 }
 
-.w3-animate-bottom{
-  animation-duration: 3s;
-}
-
-.w3-animate-left{
-  animation-duration: 3s;
-}
-
-.w3-animate-zoom{
-  animation-duration: 3s;
-}
-
 .h2-ref{
   font-weight: bold;
-}
-
-.w3-container{
-  background-attachment: fixed;
 }
